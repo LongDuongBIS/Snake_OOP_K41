@@ -13,8 +13,7 @@ namespace Snake_OOP
         private static void Main()
         {
             Console.OutputEncoding = Encoding.UTF8;
-            Console.SetBufferSize(200, 200);
-            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Press 'Enter' to start the game ahihi");
             Console.ResetColor();
             Console.ReadLine();
@@ -33,7 +32,7 @@ namespace Snake_OOP
 
             while (true)
             {
-                if (walls.IsHit(snake) || snake.isHitTail())
+                if (walls.IsHit(snake) || snake.IsHitTail())
                 {
                     break;
                 }
@@ -64,7 +63,8 @@ namespace Snake_OOP
         {
             Console.SetCursorPosition(17, 12);
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Thua rồi gà quá ahihi! Press any key to quit the game.");
+            Console.SetCursorPosition(5, 27);
+            Console.WriteLine("You lose ahihi! Press any key to quit the game.");
         }
     }
 }

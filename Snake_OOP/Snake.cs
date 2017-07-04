@@ -58,7 +58,7 @@ namespace Snake_OOP
             return false;
         }
 
-        public bool isHitTail()
+        public bool IsHitTail()
         {
             var head = list.Last();
             for (int i = 0; i < list.Count - 2; i++)
